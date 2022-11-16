@@ -31,7 +31,7 @@ class English:
                     print(meta)
                     trans.append(meta)
                 new_row.append(trans)
-            with open('english.csv', 'w', encoding='utf-8') as ff:
+            with open('english.csv', 'w', encoding='utf-8-sig') as ff:
                 writer = csv.writer(ff)
 
                 i = 0
