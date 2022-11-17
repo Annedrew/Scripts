@@ -10,7 +10,7 @@ class English:
             pass
         elif file_format == 'xlsx':
             data = pd.read_excel(filename, index_col=0)
-            filename = filename.split('.')[0] + 'csv'
+            filename = filename.split('.')[0] + '.csv'
             data.to_csv(filename, encoding='utf-8')
 
         new_row = []
