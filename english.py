@@ -31,12 +31,10 @@ class English:
                     print(meta)
                     trans.append(meta)
                 new_row.append(trans)
-            with open('english.csv', 'w', encoding='utf-8-sig') as ff:
+            with open('Result.csv', 'w', encoding='utf-8-sig') as ff:
                 writer = csv.writer(ff)
-
                 i = 0
                 for nrow in new_row:
-                    # print(nrow)
                     writer.writerow(nrow)
                     i += 1
                     print(f'{i} row has added.')

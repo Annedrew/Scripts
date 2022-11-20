@@ -1,4 +1,4 @@
-import english
+from english import English
 
 if __name__ == '__main__':
-    english.addTrans()
+    English.addTrans()
