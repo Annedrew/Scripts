@@ -47,6 +47,3 @@ def get_exchange():
                     con = cur_list[:2]
                     con.append(sell)
                     writer.writerow(con)
-
-    # 一行一行地写，一下子写很多行
-    # writerow: 一下子写满, writerows
