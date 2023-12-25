@@ -1,6 +1,6 @@
 # import english
 # import exchange
-import notion
+import pdf_extract_aws
 
 
 if __name__ == '__main__':
@@ -12,6 +12,6 @@ if __name__ == '__main__':
     start_question_number = 624
     end_question_number = 669
     for question_number in range(start_question_number, (end_question_number + 1)):
-        options = notion.extract_options_from_pdf(pdf_path, question_number)
-        notion.write_txt(options, question_number)
+        options = pdf_extract_aws.extract_options_from_pdf(pdf_path, question_number)
+        pdf_extract_aws.write_txt(options, question_number)
         print(f"{question_number} is written.")
