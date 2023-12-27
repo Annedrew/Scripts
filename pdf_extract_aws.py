@@ -1,9 +1,6 @@
 import fitz  # PyMuPDF
 import re
 
-import re
-import fitz
-
 def extract_options_from_pdf(pdf_path, question_number):
     # "rb" means read binary
     with open(pdf_path, 'rb') as file:
