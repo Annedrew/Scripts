@@ -6,4 +6,7 @@
 
 `notion.py` [PDF] extracts options from questions in a PDF file.
 
-`job.py` [web scraping] scrape job post on website.
+
+# Demo
+
+`static_web_scraping.py` static web scraping demo.
